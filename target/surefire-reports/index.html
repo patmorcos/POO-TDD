@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-RPS" class="show-methods passed suite-RPS"> (show)</a> <!-- show-methods passed suite-RPS -->
                     </span>
                     <div class="method-list-content passed suite-RPS">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RPS" title="fr.p10.miage.rps.tests.RockPaperScissorsTest" hash-for-method="testLostPlay(SCISSORS, ROCK)">testLostPlay(SCISSORS, ROCK)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-RPS" title="fr.p10.miage.rps.tests.RockPaperScissorsTest" hash-for-method="testTiePlay(PAPER, PAPER)">testTiePlay(PAPER, PAPER)</a> <!-- method navigator-link -->
@@ -128,6 +133,14 @@
               <span class="class-name">fr.p10.miage.rps.tests.RockPaperScissorsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLostPlay(SCISSORS, ROCK)">
+                  </a> <!-- testLostPlay(SCISSORS, ROCK) -->
+                  <span class="method-name">testLostPlay</span>
+                  <span class="parameters">(SCISSORS, ROCK)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testTiePlay(PAPER, PAPER)">
@@ -165,6 +178,7 @@
         &lt;methods&gt;
           &lt;include name=&quot;testWinPlay&quot;/&gt;
           &lt;include name=&quot;testTiePlay&quot;/&gt;
+          &lt;include name=&quot;testLostPlay&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- fr.p10.miage.rps.tests.RockPaperScissorsTest --&gt;
     &lt;/classes&gt;
@@ -206,7 +220,7 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testWinPlay')
 data.setCell(0, 2, 'fr.p10.miage.rps.tests.RockPaperScissorsTest')
@@ -215,6 +229,10 @@ data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testTiePlay')
 data.setCell(1, 2, 'fr.p10.miage.rps.tests.RockPaperScissorsTest')
 data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLostPlay')
+data.setCell(2, 2, 'fr.p10.miage.rps.tests.RockPaperScissorsTest')
+data.setCell(2, 3, 0);
 window.suiteTableData['RPS']= { tableData: data, tableDiv: 'times-div-RPS'}
 return data;
 }
@@ -234,16 +252,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RPS" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">fr.p10.miage.rps.tests.RockPaperScissorsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">testLostPlay</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-RPS" class="panel">
@@ -259,15 +270,19 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testWinPlay(PAPER, ROCK)</span>
-                <span class="method-start">50 ms</span>
+                <span class="method-start">26 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTiePlay(PAPER, PAPER)</span>
-                <span class="method-start">56 ms</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLostPlay(SCISSORS, ROCK)</span>
+                <span class="method-start">32 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-start">33 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
