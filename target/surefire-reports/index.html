@@ -107,7 +107,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-RPS" title="fr.p10.miage.rps.tests.RockPaperScissorsTest" hash-for-method="testWinPlay(PAPER, SCISSORS)">testWinPlay(PAPER, SCISSORS)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-RPS" title="fr.p10.miage.rps.tests.RockPaperScissorsTest" hash-for-method="testWinPlay(PAPER, ROCK)">testWinPlay(PAPER, ROCK)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-RPS -->
@@ -138,10 +138,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testWinPlay(PAPER, SCISSORS)">
-                  </a> <!-- testWinPlay(PAPER, SCISSORS) -->
+                  <a name="testWinPlay(PAPER, ROCK)">
+                  </a> <!-- testWinPlay(PAPER, ROCK) -->
                   <span class="method-name">testWinPlay</span>
-                  <span class="parameters">(PAPER, SCISSORS)</span>
+                  <span class="parameters">(PAPER, ROCK)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -156,7 +156,8 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;RPS&quot;&gt;
-  &lt;parameter name=&quot;rock&quot; value=&quot;SCISSORS&quot;/&gt;
+  &lt;parameter name=&quot;rock&quot; value=&quot;ROCK&quot;/&gt;
+  &lt;parameter name=&quot;scissors&quot; value=&quot;SCISSORS&quot;/&gt;
   &lt;parameter name=&quot;paper&quot; value=&quot;PAPER&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;testWinPlay&quot;&gt;
     &lt;classes&gt;
@@ -209,7 +210,7 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testWinPlay')
 data.setCell(0, 2, 'fr.p10.miage.rps.tests.RockPaperScissorsTest')
-data.setCell(0, 3, 3);
+data.setCell(0, 3, 4);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testTiePlay')
 data.setCell(1, 2, 'fr.p10.miage.rps.tests.RockPaperScissorsTest')
@@ -218,7 +219,7 @@ window.suiteTableData['RPS']= { tableData: data, tableDiv: 'times-div-RPS'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 4 ms</span>
               <div id="times-div-RPS">
               </div> <!-- times-div-RPS -->
             </div> <!-- times-div -->
@@ -233,9 +234,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-RPS" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">fr.p10.miage.rps.tests.RockPaperScissorsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testLostPlay</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-RPS" class="panel">
@@ -250,16 +258,16 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testWinPlay(PAPER, SCISSORS)</span>
-                <span class="method-start">46 ms</span>
+                <span class="method-name">testWinPlay(PAPER, ROCK)</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTiePlay(PAPER, PAPER)</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">39 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">51 ms</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="RPS" verbose="1">
-    <parameter name="paper" value="PAPER" /> <parameter name="rock" value="ROCK" /> <parameter name="rock" value="SCISSORS" />
+    <parameter name="paper" value="PAPER" /> <parameter name="rock" value="ROCK" /> <parameter name="scissors" value="SCISSORS" />
     <test name="testWinPlay">
         <classes>
         <class name="fr.p10.miage.rps.tests.RockPaperScissorsTest">
