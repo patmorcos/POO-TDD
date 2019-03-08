@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-RPS">
-              <span class="suite-name border-failed">RPS</span>
+              <span class="suite-name border-passed">RPS</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-RPS" class="hide-methods failed suite-RPS"> (hide)</a> <!-- hide-methods failed suite-RPS -->
-                      <a href="#" panel-name="suite-RPS" class="show-methods failed suite-RPS"> (show)</a> <!-- show-methods failed suite-RPS -->
-                    </span>
-                    <div class="method-list-content failed suite-RPS">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-RPS" title="fr.p10.miage.rps.tests.RockPaperScissorsTest" hash-for-method="testTiePlay(PAPER, PAPER)">testTiePlay(PAPER, PAPER)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-RPS -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +100,11 @@
                       <a href="#" panel-name="suite-RPS" class="show-methods passed suite-RPS"> (show)</a> <!-- show-methods passed suite-RPS -->
                     </span>
                     <div class="method-list-content passed suite-RPS">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RPS" title="fr.p10.miage.rps.tests.RockPaperScissorsTest" hash-for-method="testTiePlay(PAPER, PAPER)">testTiePlay(PAPER, PAPER)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-RPS" title="fr.p10.miage.rps.tests.RockPaperScissorsTest" hash-for-method="testWinPlay(PAPER, SCISSORS)">testWinPlay(PAPER, SCISSORS)</a> <!-- method navigator-link -->
@@ -131,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-RPS" class="panel RPS">
-          <div class="suite-RPS-class-failed">
+          <div class="suite-RPS-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">fr.p10.miage.rps.tests.RockPaperScissorsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,20 +134,8 @@
                   </a> <!-- testTiePlay(PAPER, PAPER) -->
                   <span class="method-name">testTiePlay</span>
                   <span class="parameters">(PAPER, PAPER)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [TIE] but found [WIN]
-	at fr.p10.miage.rps.tests.RockPaperScissorsTest.testTiePlay(RockPaperScissorsTest.java:35)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-RPS-class-failed -->
-          <div class="suite-RPS-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">fr.p10.miage.rps.tests.RockPaperScissorsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="testWinPlay(PAPER, SCISSORS)">
@@ -234,12 +213,12 @@ data.setCell(0, 3, 3);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testTiePlay')
 data.setCell(1, 2, 'fr.p10.miage.rps.tests.RockPaperScissorsTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 0);
 window.suiteTableData['RPS']= { tableData: data, tableDiv: 'times-div-RPS'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 ms</span>
+              <span class="suite-total-time">Total running time: 3 ms</span>
               <div id="times-div-RPS">
               </div> <!-- times-div-RPS -->
             </div> <!-- times-div -->
@@ -272,13 +251,11 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testWinPlay(PAPER, SCISSORS)</span>
-                <span class="method-start">33 ms</span>
+                <span class="method-start">46 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testTiePlay(PAPER, PAPER)</span>
-                <span class="method-start">38 ms</span>
+                <span class="method-start">51 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>

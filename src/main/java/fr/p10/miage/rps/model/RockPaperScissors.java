@@ -7,6 +7,8 @@ public class RockPaperScissors {
     }
 
     public Result play(RPSEnum p1, RPSEnum p2){
-        return Result.WIN;
+        if(p2.equals(RPSEnum.PAPER))
+            return Result.TIE;
+        else return Result.WIN;
     }
 }

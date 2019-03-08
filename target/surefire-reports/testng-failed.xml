@@ -9,7 +9,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="testTiePlay" invocation-numbers="0"/>
+          <include name="testWinPlay" invocation-numbers="0"/>
         </methods>
       </class> <!-- fr.p10.miage.rps.tests.RockPaperScissorsTest -->
     </classes>
