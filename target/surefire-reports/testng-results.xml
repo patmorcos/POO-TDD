@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="RPS" duration-ms="53" started-at="2019-03-08T14:42:17Z" finished-at="2019-03-08T14:42:17Z">
+  <suite name="RPS" duration-ms="77" started-at="2019-03-08T14:50:31Z" finished-at="2019-03-08T14:50:31Z">
     <groups>
     </groups>
-    <test name="testWinPlay" duration-ms="53" started-at="2019-03-08T14:42:17Z" finished-at="2019-03-08T14:42:17Z">
+    <test name="testWinPlay" duration-ms="77" started-at="2019-03-08T14:50:31Z" finished-at="2019-03-08T14:50:31Z">
       <class name="fr.p10.miage.rps.tests.RockPaperScissorsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:fr.p10.miage.rps.tests.RockPaperScissorsTest@7d0587f1]" name="setUp" is-config="true" duration-ms="18" started-at="2019-03-08T14:42:17Z" finished-at="2019-03-08T14:42:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:fr.p10.miage.rps.tests.RockPaperScissorsTest@7d0587f1]" name="setUp" is-config="true" duration-ms="28" started-at="2019-03-08T14:50:31Z" finished-at="2019-03-08T14:50:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testWinPlay(java.lang.String, java.lang.String)[pri:0, instance:fr.p10.miage.rps.tests.RockPaperScissorsTest@7d0587f1]" name="testWinPlay" duration-ms="4" started-at="2019-03-08T14:42:17Z" finished-at="2019-03-08T14:42:17Z">
+        <test-method status="PASS" signature="testWinPlay(java.lang.String, java.lang.String)[pri:0, instance:fr.p10.miage.rps.tests.RockPaperScissorsTest@7d0587f1]" name="testWinPlay" duration-ms="4" started-at="2019-03-08T14:50:31Z" finished-at="2019-03-08T14:50:31Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testWinPlay -->
-        <test-method status="PASS" signature="testTiePlay(java.lang.String, java.lang.String)[pri:0, instance:fr.p10.miage.rps.tests.RockPaperScissorsTest@7d0587f1]" name="testTiePlay" duration-ms="0" started-at="2019-03-08T14:42:17Z" finished-at="2019-03-08T14:42:17Z">
+        <test-method status="PASS" signature="testTiePlay(java.lang.String, java.lang.String)[pri:0, instance:fr.p10.miage.rps.tests.RockPaperScissorsTest@7d0587f1]" name="testTiePlay" duration-ms="1" started-at="2019-03-08T14:50:31Z" finished-at="2019-03-08T14:50:31Z">
           <params>
             <param index="0">
               <value>
@@ -43,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTiePlay -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:fr.p10.miage.rps.tests.RockPaperScissorsTest@7d0587f1]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-03-08T14:42:17Z" finished-at="2019-03-08T14:42:17Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:fr.p10.miage.rps.tests.RockPaperScissorsTest@7d0587f1]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-03-08T14:50:31Z" finished-at="2019-03-08T14:50:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
