@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="1.291" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="0.93" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="idea.version" value="2017.2.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,9 +62,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testWinPlay" classname="fr.p10.miage.rps.tests.RockPaperScissorsTest" time="0.018">
-    <failure message="expected [WIN] but found [LOST]" type="java.lang.AssertionError">java.lang.AssertionError: expected [WIN] but found [LOST]
-	at fr.p10.miage.rps.tests.RockPaperScissorsTest.testWinPlay(RockPaperScissorsTest.java:29)
+  <testcase name="testWinPlay" classname="fr.p10.miage.rps.tests.RockPaperScissorsTest" time="0.005"/>
+  <testcase name="testTiePlay" classname="fr.p10.miage.rps.tests.RockPaperScissorsTest" time="0.013">
+    <failure message="expected [TIE] but found [WIN]" type="java.lang.AssertionError">java.lang.AssertionError: expected [TIE] but found [WIN]
+	at fr.p10.miage.rps.tests.RockPaperScissorsTest.testTiePlay(RockPaperScissorsTest.java:35)
 </failure>
   </testcase>
 </testsuite>

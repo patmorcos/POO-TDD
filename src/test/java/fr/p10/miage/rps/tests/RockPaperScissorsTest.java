@@ -28,4 +28,10 @@ public class RockPaperScissorsTest {
     public void testWinPlay(String p1, String p2) throws Exception {
         assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)),Result.WIN);
     }
+
+    @Parameters({"paper","paper"})
+    @Test
+    public void testTiePlay(String p1, String p2) throws Exception {
+        assertEquals(rps.play(RPSEnum.valueOf(p1), RPSEnum.valueOf(p2)),Result.TIE);
+    }
 }

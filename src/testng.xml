@@ -6,6 +6,7 @@
         <class name="fr.p10.miage.rps.tests.RockPaperScissorsTest">
             <methods>
                 <include name="testWinPlay"></include>
+                <include name="testTiePlay"></include>
             </methods>
         </class>
     </classes>
